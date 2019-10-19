@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+char nama[50];
+char alm[50];
+char ktp[50];
+strcpy(nama,"Muhammad Fathur Prayuda");
+strcpy(alm,"Jl. Gn Soputan");
+strcpy(ktp,"178917237129312");
+
+printf(" Nama : %s\n",nama);
+printf(" Alamat : %s\n",alm);
+printf(" No KTP : %s\n",ktp);
+return 0;
+}

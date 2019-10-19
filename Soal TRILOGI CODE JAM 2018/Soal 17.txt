@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define phi 3.14159265
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int main(){
+	float a,b,c,d;
+	printf("masukkan sudut =");scanf("%f",&a);
+	b=cos(a*(phi/180.0));
+		c=sin(a*(phi/180.0));
+			d=tan(a*(phi/180.0));
+			printf("cos %.3f\nsin %.3f\ntan %.3f\n ",b,c,d);
+			return;
+}

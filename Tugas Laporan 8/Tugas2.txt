@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+void deret(int q,int w,int e){
+	if(q>w){
+		return;
+	}
+	q=q+e;
+	if(q<=w){
+		printf("%d ",q);
+		
+	}
+	deret(q,w,e);
+}
+
+
+void main() {
+	int r,w,t;
+	printf("masukan angka :");
+	scanf("%d",&r);
+	printf("sampai deret :");
+	scanf("%d",&w);
+	printf("masukkan selisih :");
+	scanf("%d",&t);
+	printf("deret dari %d sampai %d dengan selisih angka %d adalah \n",r,w,t);
+	printf("%d ",r);
+	deret(r,w,t);
+	getch ();
+	
+	
+}

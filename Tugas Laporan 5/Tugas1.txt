@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+void biodata()
+{
+	char nama[10],alamat[10],jabatan[10],daerah[10];
+	printf("Masukkan Nama :");
+	scanf("%s",nama);
+	printf("Masukkan Daerah Tempat Tinggal : ");
+	scanf("%s",alamat);
+	printf("Masukkan Jabatan : ");
+	scanf("%s",jabatan);
+	if(strcmp(alamat,"jakarta")==0) strcpy(daerah,"Madiun");
+	else if(strcmp(alamat,"bandung")==0) strcpy(daerah,"Tapanuli");
+	else strcpy(daerah,"Tidak Diketahui");
+	printf("\n\n==Hasil Biodata Karyawan==\n\n");
+	printf(" Nama : %s \n",nama);
+	printf(" Daerah Tempat tinggal : %s \n",alamat);
+	printf(" Jabatan : %s \n",jabatan);
+	printf(" Dipindahkan Ke '%s' ",daerah);
+	
+	return 0;
+}
+
+void main()
+{
+	biodata();
+}

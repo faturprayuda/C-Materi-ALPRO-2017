@@ -1,0 +1,74 @@
+#include<stdio.h>
+#include<conio.h>
+#include <math.h>
+
+int main(){
+void tambah(int *hasil, int bill, int bil2);
+{
+int result, bill, bil2;
+printf("masukan bilangan pertama :");
+scanf("%d",&bill);
+printf("masukan bilangan kedua :");
+scanf("%d",&bil2);
+tambah(&result,bill,bil2);
+printf("Hasil penambahan = %d\n",result);
+}
+void kurang();
+{
+	int kurangan, bill, bil2;
+printf("masukan bilangan pertama :");
+scanf("%d",&bill);
+printf("masukan bilangan kedua :");
+scanf("%d",&bil2);
+kurangan=bill-bil2;
+printf("Hasil pengurangan = %d\n",kurangan);
+}
+void pembagian();
+{
+
+	int bagi, bill, bil2;
+printf("masukan bilangan pertama :");
+scanf("%d",&bill);
+printf("masukan bilangan kedua :");
+scanf("%d",&bil2);
+bagi=bill/bil2;
+printf("Hasil pembagian = %d\n",bagi);
+}
+void perkalian();
+{
+
+	int kali, bill, bil2;
+printf("masukan bilangan pertama :");
+scanf("%d",&bill);
+printf("masukan bilangan kedua :");
+scanf("%d",&bil2);
+kali=bill*bil2;
+printf("Hasil perkalian = %d\n",kali);
+}
+void perpangkatan();
+{
+
+	int pangkat, bill, bil2;
+printf("masukan bilangan pertama :");
+scanf("%d",&bill);
+printf("masukan bilangan kedua :");
+scanf("%d",&bil2);
+pangkat=pow(bill,bil2);
+printf("Hasil perpangkatan = %d\n",pangkat);
+}return 0;}
+
+void tambah(int *hasil, int bill, int bil2) {
+*hasil=bill+bil2;
+}
+void kurangan(){
+	kurangan();
+}
+void pembagian(){
+	pembagian();
+}
+void perkalian(){
+	perkalian();
+}
+void perpangkatan(){
+	perpangkatan();
+}

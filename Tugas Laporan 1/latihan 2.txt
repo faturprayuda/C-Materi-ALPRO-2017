@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+
+
+int main(int argc, char *argv[]) 
+{ 
+    
+   int A,B,C;
+   printf("A=2\n");
+   printf("b=3\n");
+   A=2;
+   B=3;
+   C;
+   C=A;
+   A=B;
+   B=C;
+   
+   printf("nilai A baru =%d\n",A);
+   printf("nilai B baru =%d\n",B);
+   getch ();
+}

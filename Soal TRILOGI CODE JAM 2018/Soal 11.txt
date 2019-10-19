@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+int z=0;
+int x;
+char c[50];
+printf("Masukkan Kata Yang Ingin DIbalik :");
+scanf("%s",&c);
+x=strlen(c);
+printf("Setelah Dibalik : ");
+for(x-1;x>0;x--)
+{
+	printf("%c",c[x-1]);
+}
+printf("\n");
+	return 0;
+}

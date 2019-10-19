@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) 
+{
+	int angka;
+	printf("Masukkan Angka : "); scanf("%d",&angka);
+	for(angka=1;angka<=10;angka++)
+	if(angka%2==0)
+	{
+		printf(" %d BILANGAN GENAP \n",angka);
+	}
+	else printf(" %d BILANGAN GANJIL \n",angka);
+
+printf("\n");
+printf("DAN \n");
+	for(angka=0;angka<=20;angka++)
+	if(angka%3==0)
+	{
+		printf("");
+}
+else printf("%d \n",angka);
+
+
+	return 0;
+}

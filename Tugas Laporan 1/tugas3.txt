@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int modalayam, jualayam, labaayam;
+	int modaltempe, jualtempe, labatempe;
+	int modaltahu, jualtahu, labatahu;
+	int total,laba;
+	printf("DATA KANTIN TERSAYANG \n");
+	printf("\n");
+	printf("DATA MODAL KANTIN TERSAYANG \n");
+	printf("Modal Ayam 			= Rp 500 \n"); printf("Modal Tempe 			= Rp 275 \n"); printf("Modal Tahu 			= Rp 315\n");
+	printf("\n");
+	printf("DATA HARGA JUAL KANTIN TERSAYANG \n");
+	printf("Harga Ayam Dijual 		= Rp 18000 \n"); printf("Harga Tempe Dijual 		= Rp 1000 \n"); printf("Harga Tahu Dijual 		= Rp 1000 \n");
+	printf("\n");
+	printf("DATA BAHAN TERJUAL KANTIN TERSAYANG \n");
+	printf("Ayam Terjual 			= 18 potong \n"); printf("Tempe Terjual 			= 46 buah \n"); printf("Tahu Terjual 			= 58 buah \n");
+	printf("\n");
+	printf("TOTAL PENJUALAN HARI INI KANTIN TERSAYANG \n");
+	jualayam=18000*18; jualtempe=1000*46; jualtahu=1000*58;
+	printf("Total Penjualan Ayam 		= Rp %d \n", jualayam);
+	printf("Total Penjualan Tempe 		= Rp %d \n", jualtempe);
+	printf("Total Penjualan Tahu		= Rp %d \n", jualtahu);
+	printf("\n");
+	printf("MODAL PENJUALAN HARI INI KANTIN TERSAYANG \n");
+	modalayam=500*18; modaltempe=275*46; modaltahu=315*58;
+	printf("Total Modal Penjualan Ayam 	= Rp %d \n", modalayam);
+	printf("Total Modal Penjualan Tempe 	= Rp %d \n", modaltempe);
+	printf("Total Modal Penjualan Tahu	= Rp %d \n", modaltahu);
+	printf("\n");
+	printf("LABA PENJUALAN HARI INI KANTIN TERSAYANG \n");
+	labaayam=jualayam-modalayam; labatempe=jualtempe-modaltempe; labatahu=jualtahu-modaltahu;
+	printf("Laba Penjualan Ayam 		= Rp %d \n", labaayam);
+	printf("Laba Penjualan Tempe 		= Rp %d \n", labatempe);
+	printf("Laba Penjualan Tahu		= Rp %d \n", labatahu);
+	printf("\n");
+	printf("TOTAL SELURUH PENJUALAN HARI INI KANTIN TERSAYANG \n");
+	total=jualayam+jualtempe+jualtahu;
+	printf("TOTAL SELURUH PENJUALAN 	= Rp %d \n", total);
+	printf("\n");
+	printf("TOTAL SELURUH LABA PENJUALAN HARI INI KANTIN TERSAYANG \n");
+	laba=labaayam+labatempe+labatahu;
+	printf("TOTAL SELURUH Laba 		= Rp %d ", laba);
+	
+	return 0;
+}

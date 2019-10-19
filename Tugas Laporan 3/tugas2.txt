@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int hasil=1;
+	int a,b;
+	int i=1;
+
+	printf("Program Perpangkatan \n");
+	printf("Masukkan Angka : ");
+	scanf("%d",&a);
+	printf("Masukkan Nilai Pangkat :");
+	scanf("%d",&b);
+	
+	do
+	{
+		
+		hasil*=a;
+		i++;
+		
+
+	}while (!(i>b));
+	printf("Hasil Perpangkatan = %d",hasil);
+	
+
+
+	return 0;
+}

@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+
+	int s,a,b,f,total,total2;
+	int h=0, i=0; 
+	void bonus(){
+		if(i>=12000)
+		{ printf("produk yang anda beli adalah 4 buku yang sama \n");
+		  printf("setiap beli 4 buku piring DARI PRODUK KAMI ,SELAMAT! \n");
+		}else if(h>=3000)
+	
+		total2=(h*(5/100));
+		
+		printf("produk yang anda beli adalah 2 pulpen yang sama \n");
+		printf("ANDA TELAH MENDAPATKAN  potongan sebesar 5%,SELAMAT! \n");
+	}
+		int main()
+		{ a=1500;
+		  b=3000;
+		  
+		  f=0;
+		  do 
+		  {
+		  printf("\n");
+		  printf("1.pulpen 1500\n");
+		  printf("2.buku 3000\n");
+		  printf("0.bayar & exit\n");
+		  printf("masukkan pilihanmu :");
+		  scanf("%d",&s);
+		  switch(s)
+		{ 
+		    case 1:
+		    	{printf("anda membeli 1 pulpen\n");}
+		    	h=h+a;break;
+		    case 2:
+		    	{printf("anda membeli 1 buku\n");}
+		    	i=i+b;break;
+		   
+		    	default:
+		        printf("tidak ada di pilihan \n");break;
+				}
+		  }while(s != 0);
+		  total=h+i;
+		  printf("barang yang anda beli seharga = %d\n",total);
+		  printf("\n\n");
+		  bonus();
+		  	
+		  return 0;
+		  }

@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define M "test.txt"
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+typedef struct
+{
+	char name[100];
+	char tgl[100];
+}z;
+int main(int argc, char *argv[]) {
+FILE *test = fopen("test.txt","w");
+z a[5];
+int i;
+for(i=0;i<5;i++)
+{
+fputs("Nama Anda : ",test);
+puts(" Masukkan Nama : ");
+fgets(a[i].name,100,stdin);
+int name_bytes=fputs(a[i].name,test);
+fputs("Tanggal Lahir : ",test);
+puts(" Masukkan Tanggal Lahir :");
+fgets(a[i].tgl,100,stdin);
+fputs(a[i].tgl,test);
+printf("\n");
+}
+fclose(test);
+	return 0;
+}

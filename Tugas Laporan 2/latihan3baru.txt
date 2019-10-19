@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(int argc, char *argv[]) 
+{
+	char nama[10], alamat[10], jn[10], jurusan[10];
+	int A, nim, G, H, I;
+	printf("1. Identitas Universitas\n");
+	printf("2. Identitas Diri\n");
+	printf("3. Program Pembagian\n");
+	printf("4. Program Perpangkatan\n");
+	printf("Pilih program diatas \n");
+	scanf("%d",&A);
+	switch(A)
+	{
+		case 1 : printf("Saya Mahasiswa Universitas Trilogi");break;
+		case 2 : printf("Masukan Nama: \n");
+				 scanf("%s",&nama);
+				 printf("Masukan Alamat: \n");
+				 scanf("%s",&alamat);
+				 printf("Masukan Jenis Kelamin: \n");
+				 scanf("%s",&jn);
+				 printf("Masukan Nim: \n");
+				 scanf("%d",&nim);
+				 printf("Masukan Jurusan anda: \n");
+				 scanf("%s",&jurusan);
+				 printf("Nama : %s\n",nama);
+				 printf("Alamat : %s\n",alamat);
+				 printf("Jenis Kelamin : %s\n",jn);
+				 printf("NIM : %d\n",nim);
+				 printf("Jurusan : %s\n",jurusan);break;
+		case 3 : printf("Masukkan Angka Pertama: ");
+				 scanf("%d",&G);
+				 printf("Masukkan Angka Kedua: ");
+				 scanf("%d",&H);
+				 I=G/H;
+				 printf("Hasilnya adalah: %d",I);break;
+		case 4 : printf("Masukkan Angka Pertama: ");
+				 scanf("%d",&G);
+				 printf("Masukkan Angka Kedua: ");
+				 scanf("%d",&H);
+				 I=pow(G,H);
+				 printf("Hasilnya adalah: %d",I);break;
+		default : printf("Angka Yang Anda Masukkan Salah");break;
+	}
+return 0;	
+}

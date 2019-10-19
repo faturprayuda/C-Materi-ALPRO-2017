@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int nilai1,nilai2,nilai3,A,B;
+	float rata;
+	printf (" Masukan Nilai pertama :  ");
+	scanf ("%d",&nilai1);
+	printf ("Masukan Nilai kedua :  ");
+	scanf ("%d",&nilai2);
+	printf ("Masukan Nilai ketiga :  ");
+	scanf ("%d",&nilai3);
+	if (nilai1>nilai2)
+	{
+		A=nilai1;
+		B=nilai2;
+	}
+	else 
+	A=nilai2;
+	B=nilai1;
+	if (nilai3>A)A=nilai3;
+	else 
+ 	B=nilai3;
+	rata=(nilai1+nilai2+nilai3)/3;
+	printf ("Nilai Tertinggi Adalah : %d\nNilai Terendah Adalah : %d\nrata rata= %2.f",A,B,rata);
+	return 0;
+}

@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+	int angka[10],angka1[2][5],angka2[3][3],e,c,a,x;
+	
+	printf("Pilihan:\n");
+	printf("1. 1 dimensi:\n");
+	printf("2. 2x52 dimensi:\n");
+	printf("3. 3x3 dimensi :\n");
+	scanf("%d",&c);
+	switch(c)
+	{
+		case 1:for(a=1;a<=10;a++)
+	{	
+		printf("Masukan nilai ke %d:",a);
+		scanf("%d",&angka[a-1]);
+	}
+			   for(e=1;e<=10;e++)
+			   {
+			   	printf("%d ",angka[e-1]);
+			   }break;
+			   
+		case 2:
+			for(a=1;a<=2;a++)
+			{
+				for(e=1;e<=5;e++)
+			{
+				printf("Masukan nilai:");
+				scanf("%d",&angka1[a-1][e-1]);
+			}
+		}
+			for(a=1;a<=2;a++)
+			{
+				for(e=1;e<=5;e++)
+			{
+				printf("%d ",angka1[a-1][e-1]);
+			}printf("\n");
+		}break;
+		case 3:
+			for(a=1;a<=3;a++)
+			{
+				for(e=1;e<=3;e++)
+				{
+				
+							printf("Masukan nilai:");
+							scanf("%d",&angka2[a-1][e-1]);
+						
+				}
+		}
+			for(a=1;a<=3;a++)
+			{
+				for(e=1;e<=3;e++)
+			{
+				
+				printf("%d ",angka2[a-1][e-1]);
+			
+			}printf("\n");
+			
+	
+	}break;
+	}
+	
+	
+	return 0;
+}

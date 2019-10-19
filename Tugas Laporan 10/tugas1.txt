@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct
+	{
+		char nama[50];
+		char prodi[50];
+		int nim;
+		float ipk;
+	}mhs;
+	
+int main(int argc, char *argv[]) {
+	mhs a[10];
+	int b;
+	float rata,maks,total=0;
+	for(b=1;b<=10;b++)
+	{
+		printf("Form Mahasiswa ke-%d\n",b);
+		printf("Masukkan Nama Anda : ");scanf("%s",&a[b].nama);
+		printf("Masukkan NIM Anda : ");scanf("%d",&a[b].nim);
+		printf("Masukkan Jurusan Anda : ");scanf("%s",&a[b].prodi);
+		printf("Masukkan Nilai IPK Anda (Gunakan Titik): ");scanf("%f",&a[b].ipk);
+		printf("\n");
+	}
+	
+		for(b=1;b<=10;b++)
+	{
+		printf("Hasil Data Mahasiswa Universitas Triloka ke-%d\n",b);
+		printf("Nama 	  : %s \n",a[b].nama);
+		printf("NIM 	  : %d \n",a[b].nim);
+		printf("Jurusan   : %s\n",a[b].prodi);
+		printf("Nilai IPK : %.2f\n",a[b].ipk);
+		printf("\n");
+	}
+	for(b=1;b<=10;b++)
+		{
+		if (a[b].ipk>maks)
+			{
+				maks=a[b].ipk;
+			}
+			total=total+a[b].ipk;
+		}
+	rata=total/10;
+	printf("Rata-Rata IPK Mahasiswa = %.2f\n",rata);
+	printf("IPK tertinggi Adalah = %.2f\n",maks);
+	return 0;
+}

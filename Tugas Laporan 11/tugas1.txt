@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+main()
+{	
+FILE*data = fopen("test.txt" ,"w");
+	puts ("Masukan Kata  : ");
+	char kata[100];
+	fgets(kata,100,stdin);
+	strrev(kata);
+	fputs ("Kata Yang Dibalik",data);
+	int kata_bytes=fputs(kata,data);
+   	fclose(data);
+}

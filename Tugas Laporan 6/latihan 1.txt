@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void z()
+{int motor,b,c;
+	b=2000;
+	printf("Masukkan Jarak yang Ditempuh : ");scanf ("%d",&c);
+	motor=b*c;
+	printf("Biaya Perjalanan Anda Rp %d \n\n",motor);
+}
+void x()
+{
+	int mobil,b,c;
+	b=5000;
+	printf("Masukkan Jarak yang Ditempuh : ");scanf ("%d",&c);
+	mobil=b*c;
+	printf("Biaya Perjalanan Anda Rp %d\n\n",mobil);
+}
+void c()
+{
+	int barang,c,f;
+	int b=3500;
+	int d=7000;
+	printf("Masukkan Berat Barang : ");scanf("%d",&c);
+	printf("Masukkan Jarak yang Ditempuh : ");scanf("%d",&f);
+	if(c<=3)
+	{
+		barang=f*b;
+		printf("Total Biaya Rp %d \n\n",barang);
+	}else if(c>3)
+	{
+		barang=f*d;
+		printf("Total Biaya Rp %d \n\n",barang);
+	}
+	
+}
+int main()
+{
+int a;
+do{
+printf("TRIjek APP \n");
+printf("Pilih :\n");
+printf("1. TRIceng(motor)\n");
+printf("2. TRImbem(mobil)\n");
+printf("3. TRIfast(barang)\n");
+printf("0. Keluar Aplikasi\n");
+scanf("%d",&a);
+switch(a)
+	{
+		case 1:z();break;
+		case 2:x();break;
+		case 3:c();break;
+		case 0:printf("Keluar Aplikasi");break;
+		default: printf("error");
+	}
+}while(a!=0);
+getch();}
+

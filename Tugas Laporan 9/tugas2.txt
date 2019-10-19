@@ -1,0 +1,23 @@
+#define a 10
+#define b 10
+
+int main()
+{
+	int nilai[a][b];
+	int i,j,k;
+	for(i=0;i<05;i++)
+	{
+		for(j=0;j<5;j++)
+		{
+			printf("masukkan index [%d][%d]: ",i,j);scanf("%d",&nilai[i][j]);
+		}
+	}
+	for(i=0;i<5;i++)
+	{
+		for(j=0;j<5;j++)
+		{
+			printf("%d ", nilai[i][j]);
+		}printf("\n");
+	}
+getch();
+}

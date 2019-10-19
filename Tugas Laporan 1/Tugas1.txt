@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define phi 3.14
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) 
+{ 
+	float luaslingkaran, luas_permukaan_tabung,luassegitiga;
+	int r_lingkaran,t_tabung,r_tabung,t_segitiga,a_segitiga;
+	printf("Program Untuk Melakukan Perhitungan Rumus Luas Lingkaran, Luas Permukaan Tabung, dan Luas Segitiga \n");
+	printf("\n");
+	printf("=>LUAS LINGKARAN <= \n");
+	printf("\n");
+	printf("Masukkan Jari-Jari Lingkaran :");
+	scanf("%d",&r_lingkaran);
+	luaslingkaran=phi*r_lingkaran*r_lingkaran;
+	printf("Hasil Luas Lingkaran : %.2f \n", luaslingkaran);
+	printf("\n");
+	printf("\n");
+	printf("=>LUAS PERMUKAAN TABUNG <= \n");
+	printf("\n");
+	printf("Masukkan Jari-Jari Tabung : \n");
+	scanf("%d",&r_tabung);
+	printf("Masukkan Tinggi Tabung : \n");
+	scanf("%d",&t_tabung);
+	luas_permukaan_tabung=2*phi*r_tabung*(r_tabung+t_tabung);
+	printf("Hasil Luas Permukaan Tabung : %.2f \n", luas_permukaan_tabung);
+	printf("\n");
+	printf("\n");
+	printf("=>LUAS SEGITIGA <= \n");
+	printf("Masukkan Alas Segitiga :");
+	scanf("%d",&a_segitiga);
+	printf("masukkan Tinggi Segitiga :");
+	scanf("%d",&t_segitiga);
+	luassegitiga=0.5*a_segitiga*t_segitiga;
+	printf("Hasil Luas Segitiga : %.2f ", luassegitiga);
+	return 0;
+}

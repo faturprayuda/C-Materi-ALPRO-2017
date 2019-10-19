@@ -1,0 +1,35 @@
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+void main(){
+	int i, j, z[3][3],x ;
+	for(i=0;i<3;i++)
+  {
+      for(j=0;j<3;j++)
+      {
+	      printf("masukan matriks ke - [%d],[%d] : ",i,j);
+	      scanf("%d",&z[i][j]);
+      }
+  }  
+ 
+ printf("\n matriksnya adalah : \n");
+  for(i=0;i<3;i++)
+  {
+      printf("\n");
+      for(j=0;j<3;j++)
+           printf("%d\t",z[i][j]);
+  }
+ printf("\n\n");
+ 
+ printf("\nmatriks kuadratnya adalah : \n");
+  for(i=0;i<3;i++)
+  {
+      printf("\n");
+      for(j=0;j<3;j++){
+      	x=pow(z[i][j],2);
+      	printf("%d\t",x);
+	  }
+           
+  }
+ printf("\n\n");
+}

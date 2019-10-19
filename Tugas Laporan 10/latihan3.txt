@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+	typedef struct
+	{
+	int pertamax,premium,solar;	
+	}bensin;
+
+main() 
+{	
+bensin z;
+int a,m,n,b;
+printf("Pilih Bensin : \n");
+printf("1. Pertamax 3000/L \n");
+printf("2. Premium 2000/L \n");
+printf("3. Solar 500/L \n");
+scanf("%d",&a);
+switch(a)
+{
+	case 1 : printf("Berapa Liter Ingin diisi? ");scanf("%d",&z.pertamax);
+			 m=z.pertamax*3000;
+			 if(z.pertamax>3)
+			 {
+			 	n=m*10/100;
+			 	b=m-n;
+			 }
+			 printf("Banyaknya Bensin Pertamax sebanyak %d Liter dengan harga %d",z.pertamax,m);
+			 printf("Selamat Anda Mendapat Potongan 10% \nBiaya Anda menjadi %d",b);break;
+	case 2 : printf("Berapa Liter Ingin diisi? ");scanf("%d",&z.premium);
+			 m=z.premium*2000;
+			 if(z.premium>3)
+			 {
+			 	n=m*10/100;
+			 	b=m-n;
+			 }
+			 printf("Banyaknya Bensin Premium sebanyak %d Liter dengan harga %d",z.premium,m);
+			 printf("Selamat Anda Mendapat Potongan 10% \nBiaya Anda menjadi %d",b);break;
+	case 3 : printf("Berapa Liter Ingin diisi? ");scanf("%d",&z.solar);
+			 m=z.solar*500;
+			 if(z.solar>3)
+			 {
+			 	n=m*10/100;
+			 	b=m-n;
+			 }
+			 printf("Banyaknya Bensin Solar sebanyak %d Liter dengan harga %d",z.solar,m);
+			 printf("Selamat Anda Mendapat Potongan 10% \nBiaya Anda menjadi %d",b);break;
+}
+
+	return 0;
+}

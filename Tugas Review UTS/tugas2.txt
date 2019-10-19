@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void pulsa(int *b);
+void paket(int b,int *c,int *d);
+void info(int c, int d);
+
+int main(int argc, char *argv[]) {
+	int a,b,c,d;
+	do
+	{
+		printf("1. Isi Pulsa\n");
+		printf("2. Paket Internet\n");
+		printf("3. Cek Pulsa & Paket Internet\n");	
+		printf("Menu :");
+		scanf("%d",&a);
+		switch(a)
+		{
+			case 1 : pulsa(&b);break;
+			case 2 : paket(b,&c,&d);break;
+			case 3 : info(c,d);break;
+			default :printf("SALAH");break;
+		}
+	}while(a!=0);
+	return 0;
+}
+
+void pulsa(int *b){
+	printf("Anda Ingin Mengisi Pulsa Sebesar :");
+	scanf("%d",&*b);
+	printf("Selamat Anda Berhasil Mengisi Pulsa Sebesar Rp.%d\n\n",*b);
+}
+void paket(int b,int *c,int *d){
+	printf("Pilihan Paket Internet :\n");
+	printf("1.Paket Hemat (Rp.20.000)\n");
+	printf("2.Paket Super (Rp.50.000)\n");
+	printf("Pilih Paket :");
+	scanf("%d",&*c);
+	switch(*c)
+	{
+		case 1 :*d=b-20000;
+				if(b<20000)
+				{
+					printf("Maaf Pulsa Anda Tidak Mencukupi\n\n");
+				}
+				else
+				{
+					printf("Anda Berhasil Mengaktifkan Paket\n\n");
+				}break;
+				
+		case 2 :*d=b-50000;
+				if(b<50000)
+				{
+					printf("Maaf Pulsa Anda Tidak Mencukpi\n\n");
+				}
+				else
+				{
+					printf("Anda Berhasil Mengaktifkan Paket\n\n");
+				}break;	
+	}
+
+}
+
+void info(int d,int c){
+	if(c==1)
+	{
+	printf("Sisa Pulsa Anda Rp.%d dan Terdaftar di paket hemat Ro 20.000 sebanyak 2gb\n\n",d);
+	}
+	else
+	{
+	printf("Sisa Pulsa Anda Rp.%d dan Terdaftar di paket super Ro 50.000 sebanyak 5gb\n\n",d);
+	}
+}

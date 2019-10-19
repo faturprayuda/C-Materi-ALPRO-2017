@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char *argv[]) 
+{
+	int e,f;
+	int total=0;
+	
+	printf(" ==SELAMAT BERBELANJA== \n\n\n");
+	printf("Pilih Menu Dibawah :) \n\n");
+	switch(f)
+	{
+		case 1 : do
+			{
+				printf ("1.Ayam 		Rp.5000 \n");
+				printf ("2.tahu 		Rp.1000\n");
+				printf ("3.tempe 	Rp.1000\n");
+				printf ("4.kangkung 	Rp.1000\n");
+				printf ("0.exit \n");
+				scanf ("%d",&e);
+				if(e==1)
+				{
+					e=5000;
+				}
+				if(e==2)
+				{
+					e=1000;
+				}
+				if(e==3)
+				{
+					e=1000;
+				}
+				if(e==4)
+				{
+					e=1000;
+				}
+				else
+				printf("");
+				total=e+total;
+			}
+				while (e!=0); 
+				
+				printf("Total Biaya Belanja =Rp %d",total);break;
+		
+		default : printf("404 NOT FOUND !");break;
+	}
+return 0;
+}

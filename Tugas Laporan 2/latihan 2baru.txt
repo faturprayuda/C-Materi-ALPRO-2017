@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	char kaki [10],hewan[10], darat[10], jenisair[10], habitat[10];
+	printf("Masukkan Jenis Hewan (darat/laut)"); scanf("%s",&hewan);
+	if(strcmp(hewan,"darat")==0)
+	{
+		printf("Masukkan Jumlah Kaki(dua/empat) :"); scanf("%s",kaki);
+		if(strcmp(kaki,"dua")==0) strcpy(hewan,"Ayam");
+		if(strcmp(kaki,"empat")==0) strcpy(hewan,"Sapi");
+		printf("Hewan Tersebut adalah : %s",hewan);
+	}
+	else if(strcmp(hewan,"laut")==0)
+	printf("Masukkan jenis air(asin/tawar) :"); scanf("%s",jenisair);
+		if(strcmp(jenisair,"asin")==0) strcpy(hewan,"Ikan Hiu");
+		if(strcmp(kaki,"tawar")==0) strcpy(hewan,"Ikan Cucut");
+		printf("Hewan Tersebut adalah : %s",hewan);
+	
+	return 0;
+
+}

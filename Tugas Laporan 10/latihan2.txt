@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+
+	typedef struct
+	{
+	char nama[20];
+	char divisi[20];
+	int umur;	
+	}krw;
+
+main() 
+{	
+krw z;
+char Karyawan[50],Lapangan[50];
+int a;
+printf("Masukkan Nama : ");scanf("%s",&z.nama);
+printf("Masukkan Umur : ");scanf("%d",&z.umur);
+printf("Masukkan Divisi (Karyawan/Lapangan) : ");scanf("%s",&z.divisi);
+
+if(z.umur<18 && z.umur>0)
+{
+	a=1500000;
+}
+if(z.umur>=18)
+{
+	a=3000000;
+}
+if(strcmp(z.divisi,"Karyawan")==0)
+		{
+		if(z.umur<24)
+		a=3000000;
+		}
+	if(strcmp(z.divisi,"Lapangan")==0)
+		{
+		if(z.umur>=24)
+		a=5500000;
+		}
+
+printf("BIODATA PENDAPATAN KARYAWAN PT.SEJAHTERA\n");
+printf("Nama : %s\n",z.nama);
+printf("Pendapatan Rp %d \n",a);
+printf("DIVISI : %s\n",z.divisi);	
+	return 0;
+}

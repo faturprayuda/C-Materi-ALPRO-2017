@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct
+{
+	char nama[50];
+	char prodi[50];
+	int nim;
+	int angk;
+	char jns[15];
+}data;
+
+main(){
+data a[10];
+int z,m=0;
+char l,p;
+char pria[10],perempuan[10];
+for(z=1;z<=5;z++)
+{
+printf("MASUKKAN DATA ANDA %d\n\n",z);
+printf("Masukkan Nama : "); scanf("%s",&a[z].nama);
+printf("Masukkan Prodi : "); scanf("%s",&a[z].prodi);
+printf("Masukkan NIM : "); scanf("%d",&a[z].nim);
+printf("Masukkan Angkatan : "); scanf("%d",&a[z].angk);
+printf("Masukkan Jenis Kelamin P/L: "); scanf("%s",&a[z].jns);
+printf("\n");
+}
+
+for(z=1;z<=5;z++)
+{
+
+printf("\nDATA MAHASISWA UNIVERSITAS TRIKORA %d \n\n",z);
+printf("Nama 			: %s\n",a[z].nama);
+printf("Prodi %s Angkatan %d\n",a[z].prodi,a[z].angk);
+printf("NIM 			: %d\n",a[z].nim);
+printf("Jenis Kelamin 		: %s\n\n",a[z].jns);
+if(strcmp(a[z].jns,"pria")==0)
+{
+	l++;
+}
+if(strcmp(a[z].jns,"perempuan")==0)
+{
+	p++;
+}
+
+}printf(" Jumlah MAHASISWA Pria di UNIVERSITAS TRIKORA %d \n",l);
+printf(" Jumlah MAHASISWA Perempuan di UNIVERSITAS TRIKORA %d",p);
+return 0;
+}

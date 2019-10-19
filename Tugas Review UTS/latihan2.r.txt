@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int a,b,c=1;
+	for(a=1;a<=5;a++)
+	{
+		b=1;
+		while(b<=5)
+		{
+			if(b==c)
+			{
+				if(c%2==0){ printf("0 ");}
+				else
+				{printf("1 ");}
+			}else{printf("* ");}
+				b++;
+		}printf("\n");c++;
+	}
+	return 0;
+}

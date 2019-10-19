@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+int x,a,b,c,d,e,f;
+x=6;
+a=pow(x,4);
+b=pow(x,2);
+c=2*b;
+d=5*x;
+e=1;
+f=a+c+d+e;
+printf("x4 = %d\n",a);
+printf("2x2 = %d\n",c);
+printf("5x = %d\n",d);
+printf("%d\n",e);
+printf("hasil nya adalah = %d",f);
+	return 0;
+
+}

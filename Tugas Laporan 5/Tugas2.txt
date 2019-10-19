@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void belanja()
+{
+	int a=5000;
+	int b=1000;
+	int c=1000;
+	int d=1000;
+	int e,f,g,total;
+	int h=0,i=0,j=0,k=0;
+	
+	printf(" ==SELAMAT BERBELANJA== \n\n\n");
+	printf("Pilih Menu Dibawah :) \n\n");
+	do
+	{
+				printf ("1.Ayam 		Rp.5000 \n");
+				printf ("2.tahu 		Rp.1000\n");
+				printf ("3.tempe 	Rp.1000\n");
+				printf ("4.kangkung 	Rp.1000\n");
+				printf ("0.Selesai Belanja \n");
+				scanf ("%d",&e);
+				
+				switch(e)
+			{
+				case 1 : 	h=h+a;break;
+				case 2 : 	i=i+b;break;
+				case 3 : 	j=j+c;break;
+				case 4 : 	k=k+d;break;
+				case 0 : break;
+				default : printf("404 NOT FOUND !");break;
+					
+			}
+	}while (e!=0);
+			total=h+i+j+k;
+			if(h>=20000||i>=4000||j>=4000||k>=4000)
+		{ printf("\n\nAnda Sudah Membeli 4 Jenis Barang yang Sama\n");
+		  printf("Selamat !!! Anda mendapatkan 1 Buah Gelas Cantik \n\n");
+		}
+			printf("Total Biaya Belanja =Rp %d",total);	
+	
+
+return 0;}
+
+void main()
+{
+	belanja();
+}

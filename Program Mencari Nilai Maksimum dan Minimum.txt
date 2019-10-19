@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,i,max,min,bil;
+printf(" Program Mencari Nilai Maksimum dan Minimum\n");
+printf("\n Masukkan Banyak Data =  ");
+scanf("%d",&n);
+printf("\n Masukkan Bilangan ke-1 = ");
+scanf("%d",&bil);
+max=bil;
+min=bil;
+for(i=2;i<=n;i++)
+{
+printf("\n Masukkan Bilangan Ke-%d = ",i);
+scanf("%d",&bil);
+if(bil>max)
+max=bil;
+if(bil<min)
+min=bil;
+}
+printf("\n Nilai Maksimum nya adalah %d\n",max);
+printf("\n Nilai Minimum  nya adalah %d\n",min);
+getch();
+}

@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int elemen[100];
+    int z, c, k=10, x;
+    printf("Masukkan %d elemen : ", k);
+    for(z=0; z<k; z++){
+        scanf("%d", &elemen[z]);
+    }
+    for(z=0;z<k;z++){
+    	for(c=z+1;c<k;c++){
+    		if(elemen[z]>elemen[c]){
+    			x=elemen[z];
+    			elemen[z]=elemen[c];
+    			elemen[c]=x;
+			}
+		}
+	}
+	for (z=0;z<k;z++){
+		printf("%d ",elemen[z]);
+	}
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int a,b,c;
+	printf("A=1\n");
+	printf("B=2\n");
+	a=1;
+	b=2;
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	printf("Hasil Baru %d %d",a,b);
+	return 0;
+}

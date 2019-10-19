@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int a,b,c,bil,min,max;
+	printf("Program Untuk Mencari Nilai Tertinggi Berdasarkan Tiga Inputan \n");
+	printf("_____________________________________________________________ \n");
+	printf("\n");
+	printf("Masukkan Nilai Pertama 	: ");
+	scanf("%d",&a);
+	printf("Masukkan Nilai Kedua 	: ");
+	scanf("%d",&b);
+	printf("Masukkan Nilai Ketiga 	: ");
+	scanf("%d",&c);
+	if (a>b)
+	{
+		max=a; min=b;
+	}
+	else 
+	
+		{max=b; min=a;}
+	if (c>max)max=c;
+	if (c<min)min=c;
+		printf("\nNilai tertinggi 	: %d \n",max);
+		printf("nilai terendah 		: %d",min);
+	return 0;
+}

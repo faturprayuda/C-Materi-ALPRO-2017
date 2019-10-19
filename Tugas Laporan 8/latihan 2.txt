@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int fibo(int x)
+{
+    if(x<2)
+    {
+        return x;
+    }
+    else
+    {
+        return fibo(x-2)+fibo(x-1);
+    }
+}
+
+int main()
+{
+    int i,x;
+    printf("Masukkan N Fibonaci: ");
+    scanf("%d",&i);
+        for(x=0;x<i;x++)
+        {
+        	printf("%d ",fibo(x));
+		}
+   
+}

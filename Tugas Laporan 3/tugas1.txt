@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define phi 3.14
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) 
+{
+	float luaslingkaran, luassegitiga;
+	int r_lingkaran,t_segitiga,a_segitiga,s_kubus,luaskubus,luas_persegi;
+	int f,a,e,sisi,luaspersegi_panjang,panjang,lebar;
+	
+	printf("Program Untuk Melakukan Perhitungan Luas Bangun Ruang dan Bangun Datar");
+	printf("\n\n\n\n");
+	do
+	{
+	printf("Pilih : \n");
+	printf("1. =>LUAS LINGKARAN <= \n");
+	printf("2. =>LUAS PERSEGI <= \n");
+	printf("3. =>LUAS SEGITIGA <= \n");
+	printf("4. =>LUAS PERSEGI PANJANG <= \n");
+	printf("0. Keluar Program");
+	printf("\n\n\nSilahkan Pilih : ");
+	scanf("%d",&f);
+	
+	switch(f)
+	{
+		case 1 : do
+			{
+				printf("Masukkan Jari-Jari Lingkaran :");
+				scanf("%d",&r_lingkaran);
+				luaslingkaran=phi*r_lingkaran*r_lingkaran;
+				printf("Hasil Luas Lingkaran : %.2f \n", luaslingkaran);
+				printf("\n");
+				printf("1. Ulangi  \n");
+				printf("0. Menu Utama \n");
+				scanf ("%d",&e);
+			}
+				while (e!=0);break;
+		
+		case 2 : do
+			{
+				printf("Masukkan Sisi :");
+				scanf("%d",&sisi);
+				luas_persegi=sisi*sisi;
+				printf("Hasil Luas Persegi : %d \n",luas_persegi);
+				printf("\n");
+				printf("1. Ulangi  \n");
+				printf("0. Menu Utama \n");
+				scanf ("%d",&e);
+			}
+				while (e!=0);break;
+	
+		case 3 : do
+			{
+				printf("Masukkan Alas Segitiga :");
+				scanf("%d",&a_segitiga);
+				printf("masukkan Tinggi Segitiga :");
+				scanf("%d",&t_segitiga);
+				luassegitiga=0.5*a_segitiga*t_segitiga;
+				printf("Hasil Luas Segitiga : %.2f ", luassegitiga);
+				printf("\n");
+				printf("1. Ulangi  \n");
+				printf("0. Menu Utama \n");
+				scanf ("%d",&e);
+			}
+				while (e!=0);break;
+	
+		case 4 : do
+			{
+				printf("Masukkan Panjang :");
+				scanf("%d",&panjang);
+				printf("Masukkan Lebar :");
+				scanf("%d",&lebar);
+				luaspersegi_panjang=panjang*lebar;
+				printf("Hasil Luas Persegi Panjang : %d ",luaspersegi_panjang);
+				printf("\n");
+				printf("1. Ulangi  \n");
+				printf("0. Menu Utama \n");
+				scanf ("%d",&e);
+			}
+				while (e!=0);break;		
+		
+		case 0 : printf("Anda Telah Keluar!");
+				break;
+		
+		default : printf("Anda Salah Memasukkan Perintah ! \n\n");break;
+	}
+}
+while(f!=0);
+	return 0;
+}

@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct
+	{
+		int barang;
+		int untung;
+		int krw;
+		int gdg;
+		int prw;
+		int total;
+	}laba;
+	
+int main(int argc, char *argv[]) {
+	laba a;
+	int b,c,d,f,g,h;
+	a.barang=20000;
+	a.untung=1750;
+	a.krw=1000000;
+	a.gdg=7000000;
+	a.prw=200000;
+	
+	a.total=a.untung*a.barang;
+	printf("\t\tLAPORAN LABA PERTAHUN PT.Jaya Selalu\t\t\n\n");
+	printf(" Barang Terjual Dalam Sebulan 		= %d\n",a.barang);
+	printf(" Keuntungan Perbarang Dalam Sebulan 	= %d\n",a.untung);
+	printf(" Total Keuntuntungan Dalam Sebulan 	= %d\n",a.total);
+	a.barang=a.barang*12;
+	a.untung=a.untung*12;
+	c=a.total*12;
+	printf("\n\n");
+	printf(" Barang Terjual Dalam Setahun 		= %d\n",a.barang);
+	printf(" Keuntungan Perbarang Dalam Setahun 	= %d\n",a.untung);
+	printf(" Total Keuntuntungan Dalam Setahun 	= %d\n",c);
+	printf("\n\n");
+	b=a.krw*5;
+	printf(" Pengeluaran Dalam Sebulan : \n");
+	printf(" Gaji Karyawan perorang			= %d\n",a.krw);
+	printf(" Total Gaji 5 Karyawan			= %d\n",b);
+	printf(" Sewa Gedung 				= %d\n",a.gdg);
+	printf(" Biaya Perawatan 			= %d\n",a.prw);
+	g=b+a.gdg+a.prw;
+	d=a.total-a.gdg-b-a.prw;
+	printf(" Total pengeluaran 			= %d\n",g);
+	printf(" Laba Dalam Sebulan 			= %d\n",d);
+	printf("\n\n");
+	printf(" Pengeluaran Dalam Setahun : \n");
+	b=b*12;
+	a.gdg=a.gdg*12;
+	a.prw=a.prw*12;
+	printf(" Total Gaji 5 Karyawan			= %d\n",b);
+	printf(" Sewa Gedung 				= %d\n",a.gdg);
+	printf(" Biaya Perawatan 			= %d\n",a.prw);
+	f=d*12;
+	h=b+a.gdg+a.prw;
+	printf(" Total pengeluaran 			= %d\n",h);
+	printf("\n\n");
+	printf(" Laba Dalam Setahun 			= %d\n",f);
+	return 0;
+}

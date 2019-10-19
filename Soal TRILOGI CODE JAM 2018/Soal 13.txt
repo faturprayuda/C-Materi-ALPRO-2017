@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int umur;
+	char z[100],x[100],nama[100],kelamin[100];
+	printf("Masukan nama anda : "); scanf("%s",&nama);
+	printf("Masukan umur anda : "); scanf("%d",&umur);
+	printf("jenis kelamin (male/female):"); scanf("%s",z);
+	printf("\n");
+	if(umur<18)
+	{
+		if(strcmp(z,"male")==0) strcpy(kelamin,"Anda adalah laki-laki");
+		if(strcmp(x,"female")==0) strcpy(kelamin,"Anda adalah perempuan");
+	}
+	else if(umur>=18)
+	{
+		if(strcmp(z,"male")==0) strcpy(kelamin,"Anda adalah pria");
+		if(strcmp(x,"female")==0) strcpy(kelamin,"Anda adalah wanita");
+	}
+	printf("Nama : %s\n",nama);
+	printf("umur : %d\n",umur);
+	printf("%s",kelamin);
+	return 0;
+}

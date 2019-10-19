@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+long a(int b, int c) {
+     if ((b == 0) || (c == 0) || (b == c)) return 1;
+     else return (a(b-1,c-1) + a(b-1,c));
+} 
+int main() {
+    int angka,z,x,c;
+	printf("masukkan angka = ");
+    scanf("%i", &angka);
+    for (z = 0; z<=angka; z++) {
+        for (x = angka; x > z; x--) printf("   ");
+        for (c = 0; c <= z; c++) printf("%6d", a(z,c));
+        printf("\n");
+    }
+    return 0;
+}

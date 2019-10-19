@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void deret(int x)
+{
+    if(x<=1)
+    {}
+    else
+    {
+        if(x==68||x==54||x==32||x==12)
+        {
+        	printf("");
+        	deret(x-2);
+		}
+		else
+		{
+			printf("%d ",x);
+			deret(x-2);
+		}
+    }
+}
+
+int main()
+{
+    int x=100;
+    deret(x);
+    return 0;
+}

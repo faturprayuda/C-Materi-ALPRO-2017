@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+void NilaiSiswa() 
+{
+	int a;
+	char nama[10],kelas[5];
+	printf("Masukkan Nilai :");
+	scanf("%d",&a);
+	if(a>75 && a<=100)
+	{
+		printf("Selamat Anda Mendapatkan Beasiswa \nSilahkan Isi Biodata Untuk Beasiswa \n\n");
+	printf("Masukkan Nama : ");
+	scanf("%s",nama);
+	printf("Masukkan Kelas :");
+	scanf("%s",kelas);
+	printf(" Biodata Untuk Beasiswa \n");
+	printf(" Nama = %s \n",nama);
+	printf(" Kelas = %s \n",kelas);
+	printf(" Nilai = %d \n",a);}
+	else if(a==75)
+	{
+		printf("ANDA REMEDIAL");
+	}
+	else if(a<75 && a>=0)
+	{
+	printf("ANDA TIDAK LULUS\n\n");
+}
+else printf(" Milai Yang Anda Masukkan Salah");
+	return 0;
+}
+
+void main()
+{
+	NilaiSiswa();
+}

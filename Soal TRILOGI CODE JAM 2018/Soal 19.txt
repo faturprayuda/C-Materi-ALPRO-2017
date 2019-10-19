@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int fibonacci(int x)
+{
+	if(x<2)
+	{
+		return x;
+	}
+	return fibonacci(x-2)+fibonacci(x-1);
+}
+int main()
+{
+	int i,x;
+	printf ("Masukan banyaknya fibonacci yang ditampilkan : ");
+	scanf ("%d",&i);
+	for(x=4;x<i;x++)
+	{
+		printf ("%d, ",fibonacci(x));
+	}
+}

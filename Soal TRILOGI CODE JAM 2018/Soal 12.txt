@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+int a,b,cek;
+for(a=2;a<=100;a++)
+{
+	cek=0;
+	for(b=2;b<a;b++)
+	{
+		if(a%b==0)
+		{
+			cek=1;
+		}
+	}
+		if(cek==0)
+		{
+			printf("%d",a);printf("\n");
+		}
+	
+}
+	return 0;
+}

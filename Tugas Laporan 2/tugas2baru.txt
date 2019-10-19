@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int a,b,c,d;
+	printf("Pilih Operasi Matematika Dibawah Ini !\n");
+	printf("______________________________________\n");
+	printf("\n");
+	
+	printf("1. Pertambahan \n");
+	printf("2. Pengurangan \n");
+	printf("3. Perkalian \n");
+	printf("\n");
+	printf("Pilih Menu :"); scanf("%d",&a);
+	if(a==1)
+	{
+		printf("Masukkan Angka Pertama : ");
+		scanf("%d",&b);
+		printf("Masukkan Angka Kedua : ");
+		scanf("%d",&c);
+		d=b+c;
+		printf("Hasilnya adalah = %d",d);
+	
+	}
+	else
+	if(a==2)
+	{
+		printf("Masukkan Angka Pertama : ");
+		scanf("%d",&b);
+		printf("Masukkan Angka Kedua : ");
+		scanf("%d",&c);
+		d=b-c;
+		printf("Hasilnya adalah = %d",d);
+	}
+	else
+	if(a==3)
+	{
+	
+		printf("Masukkan Angka Pertama : ");
+		scanf("%d",&b);
+		printf("Masukkan Angka Kedua : ");
+		scanf("%d",&c);
+		d=b*c;
+		printf("Hasilnya adalah = %d",d);
+	}
+	else
+		printf("Menu Yang Anda Pilih Salah");
+	return 0;
+}

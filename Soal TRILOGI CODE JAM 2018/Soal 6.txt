@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int a,b;
+	float c;
+	printf("Masukkan Alas :");
+	scanf("%d",&a);
+	printf("Masukkan Tinggi :");
+	scanf("%d",&b);
+	c=0.5*a*b;
+	printf("Hasil Luas Segitiga Siku-Siku = %.2f",c);
+	return 0;
+}

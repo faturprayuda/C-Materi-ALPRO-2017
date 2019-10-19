@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+
+	typedef struct
+	{
+	char nama[20];
+	char divisi[20];
+	char domisili[20];
+	int umur;	
+	}krw;
+
+main() 
+{	
+krw z;
+char Karyawan[50],Lapangan[50];
+int a,gaji,bonus;
+printf("Masukkan Nama : ");scanf("%s",&z.nama);
+printf("Masukkan Umur : ");scanf("%d",&z.umur);
+printf("Masukkan Domisili : ");scanf("%s",&z.domisili);
+printf("Masukkan Divisi (Karyawan/Lapangan) : ");scanf("%s",&z.divisi);
+
+if(z.umur<18 && z.umur>0)
+{
+	a=1500000;
+}
+if(z.umur>=18)
+{
+	a=3000000;
+}
+if(strcmp(z.divisi,"Karyawan")==0)
+		{
+		if(z.umur<24 && z.umur>18)
+		a=3000000;
+		}
+if(strcmp(z.divisi,"Lapangan")==0)
+		{
+		if(z.umur>=24)
+		a=5500000;
+		}
+gaji=a;
+if((strcmp(z.domisili,"jakarta")==0)||(strcmp(z.domisili,"bogor")==0)||(strcmp(z.domisili,"depok")==0)||(strcmp(z.domisili,"tanggerang")==0)||(strcmp(z.domisili,"bekasi")==0))
+		{
+			bonus=(15000*30)+200000;
+		}
+else{
+			bonus=(15000*30)+500000;
+		}
+gaji=gaji+bonus;
+printf("\n\n");
+printf("BIODATA PENDAPATAN KARYAWAN PT.SEJAHTERA\n");
+printf("Nama : %s\n",z.nama);
+printf("Pendapatan Rp %d \n",gaji);
+printf("DIVISI : %s\n",z.divisi);	
+printf("Domisili : %s\n",z.domisili);
+return 0;
+}

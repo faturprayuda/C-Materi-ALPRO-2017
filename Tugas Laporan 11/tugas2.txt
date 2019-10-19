@@ -1,0 +1,78 @@
+Yang membedakan antara r mode dan r+ mode pada file adalah r mode hanya untuk 
+membaca file saja 
+sedangkan r+ mode digunakan untuk membuat file baru bisa untuk membaca dan menulis 
+file baru tersebut.
+
+Contoh Kodingan :
+main()
+{
+FILE *test = fopen("test.txt",“r");
+char a[100];
+	fgets(a,100,test);
+	printf("%s",str1);
+	fclose(test);
+}
+
+------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+int main()
+{
+   FILE *fp;
+
+   fp = fopen("test.txt", "r+");
+   fclose(fp);
+} 
+
+========================================================================================
+
+Sedangkan perbedaan antar w mode dan w+ mode pada file adalah w mode digunakan hanya 
+untuk menulis file jika file belum tersedia 
+sedangkan w+ mode digunakan untuk membaca dan menulis file (menimpa file)
+
+Contoh Kodingan :
+
+int main(int argc, char *argv[]) {
+	FILE *test = fopen("test.txt","w");
+	
+	fputs("this is the first line",test);
+	fclose(test);}
+
+----------------------------------------------------------------------------------------
+
+#include <stdio.h>
+int main()
+{
+   FILE *fp;
+FILE *test = fopen("test.txt","w");
+	
+	fputs("this is the first line",test);
+	fclose(test);}
+}  
+
+========================================================================================
+
+Perbedaan mode a dan a+ mode dalam file adalah mode a hanya untuk menambahkan file 
+jika file belum tersedia
+sedangkan a+ mode digunakan untuk membuka file untuk membaca dan menulis file 
+tersebut (jika file sudah tersedia maka file akan bertambah)
+
+Contoh Kodingan :
+
+#include <stdio.h>
+int main()
+{
+   FILE *f1=fopen("test.dat","a+");
+   fclose(fp);
+} 
+
+----------------------------------------------------------------------------------------
+
+#include <stdio.h>
+int main()
+{
+   FILE *fp;
+
+   fp = fopen("test.txt", "a");
+   fclose(fp);
+} 

@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int angka[10],a,d;
+	float c=0;
+	for(a=1;a<=10;a++)
+	{
+		printf("Masukan nilai ke %d:",a);
+		scanf("%d",&angka[a-1]);
+		c=angka[a-1]+c;
+		if(angka[a-1]>d)
+		{
+			d=angka[a-1];
+		}
+	}
+	printf("Nilai Tertinggi %d",d);
+	c=c/10;
+	printf("Nilai Rata Ratanya %.2f",c);
+	
+	return 0;
+}
